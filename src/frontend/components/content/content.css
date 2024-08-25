@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+.C_container{
+  border: 2px solid black;
+  border-radius: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 8% 2% 8% 2%;
+    height: 100%;
+}
+.rightContent{
+  /* background-color: red; */
+  height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0% 2% 2% 2%;
+    width: 50%;
+}
+
+/* .C_container {
+    display: flex;
+  } */
+  
+  .leftContent {
+    margin: 0% 2% 2% 2%;
+    height: 80%;
+    width: 50%;
+    position: relative;
+  }
+  
+  .imageContainer {
+    position: relative;
+  }
+  
+  .imageContainer img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .imageContainer:hover .overlay {
+    opacity: 1;
+  }
+  .bodyText{
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .overlayButton {
+    margin: 120% 6% -2% 6%;
+    padding: 1% 1%;
+    background: white;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    height: 10%;
+    transition: 2s ease;
+  }
+ .connectToAuthor{
+  display: flex;
+  flex-direction: row;
+  height: 15%;
+  gap: 10%;
+ }
+ .button1{
+  border-radius: 25px;
+  background: var(--PrimaryColor, #00004D);
+  box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2% 2%;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 12px;
+ }
