@@ -16,6 +16,8 @@ import type {
 } from "convex/server";
 import type * as functions_contentDisplay from "../functions/contentDisplay.js";
 import type * as functions_createExhibit from "../functions/createExhibit.js";
+import type * as functions_deleteExhibit from "../functions/deleteExhibit.js";
+import type * as functions_getSingleContent from "../functions/getSingleContent.js";
 
 /**
  * A utility for referencing Convex functions in your app's API.
@@ -28,6 +30,8 @@ import type * as functions_createExhibit from "../functions/createExhibit.js";
 declare const fullApi: ApiFromModules<{
   "functions/contentDisplay": typeof functions_contentDisplay;
   "functions/createExhibit": typeof functions_createExhibit;
+  "functions/deleteExhibit": typeof functions_deleteExhibit;
+  "functions/getSingleContent": typeof functions_getSingleContent;
 }>;
 export declare const api: FilterApi<
   typeof fullApi,

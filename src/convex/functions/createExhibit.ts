@@ -1,31 +1,32 @@
-import { api } from "../_generated/api";
-import { v } from "convex/values";
+import { mutation } from '../_generated/server';
+import { v } from 'convex/values';
 
-export default api(async (req, res) => {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ message: 'Method not allowed' });
-  }
+export const createExhibit = mutation({
+  args: {
+    userId: v.string(),
+    writeup: v.string(),
+    contentObjectURL: v.string(),
+    isforsale: v.boolean(),
+    price: v.optional(v.number()),
+    licence: v.optional(v.string())
+  },
+  handler: async (ctx, { userId, writeup, contentObjectURL, isforsale, price, licence }) => {
+    try {
+      // Inserting the exhibit into the "exhibits" table
+      const exhibitId = await ctx.db.insert("exhibits", {
+        aurthorId: userId,
+        writeup,
+        likes: 0,
+        isforsale,
+        price,
+        licence,
+        contentObjectURL,
+      });
 
-  try {
-    const { userId, writeup, contentObjectURL, isforsale, price, licence } = req.body;
-
-    // You can add validation here for other exhibit data if needed
-
-    const ctx = await api.getServerLessFucntionContext();
-
-    const exhibitId = await ctx.db.insert("exhibits", {
-      aurthorId: userId, // Use the userId from the request body
-      writeup,
-      likes: 0,
-      isforsale,
-      price,
-      licence,
-      contentObjectURL,
-    });
-
-    res.status(201).json({ message: 'Successfully Created' });
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ message: 'Error creating exhibit' });
+      return { message: 'Successfully Created', exhibitId };
+    } catch (error) {
+      console.error('Error creating exhibit:', error);
+      throw new Error('Error creating exhibit');
+    }
   }
 });
