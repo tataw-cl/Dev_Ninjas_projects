@@ -1,18 +1,11 @@
 import './App.css';
 import React from 'react';
-// import {Content} from './frontend/components/content/Content.jsx';
-import {Section} from './frontend/components/sections/Section.jsx';
-import { Section2 } from './frontend/components/sections/section2.jsx';
-import { Navbar } from './frontend/components/Navbar/Navbar.jsx';
-import { Searchbar } from './frontend/components/searchbar/searchbar.jsx';
+import { GeneralView } from './frontend/components/GeneralView/GeneralView.jsx';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Searchbar />
-      <Section SectionName={"Recommendations"}/>
-      <Section2 SectionName={"Popular"} />
+      <GeneralView />
     </div>
   );
 }

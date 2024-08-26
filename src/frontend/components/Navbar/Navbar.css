@@ -23,6 +23,7 @@ font-weight: 600;
 line-height: normal;
    }
    .navbar{
+    background-color: #F4F4F4;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

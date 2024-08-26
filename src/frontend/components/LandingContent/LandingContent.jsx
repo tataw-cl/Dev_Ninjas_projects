@@ -1,12 +1,12 @@
 import React from 'react'
 
-export const LandingContent = () => {
+export const LandingContent = ({className}) => {
   return (
-    <div className='LandingContent'>
-<div className="picComp">
+    <div className='LandingContent scroll-section'>
+<div>
     <img style={{width: '100%'}} src="images/Rectangle 41.png" alt="page content" />
 </div>
-<div className="textComp">
+<div className={"textComp"}>
     <h3>Destructured text information</h3>
     <h5>
     UserName
