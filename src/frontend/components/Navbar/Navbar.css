@@ -9,7 +9,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 15px;
     margin: 2% 2%;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -51,4 +51,13 @@ font-weight: 600;
     gap: 6%;
     margin-top: 3%;
     margin-right: 5%;
+   }
+   .logo{
+    width: 80%;
+    height: 80%;
+    /* height: auto; */
+   }
+   .logo img{
+    width: 20%;
+    height: auto;
    }
