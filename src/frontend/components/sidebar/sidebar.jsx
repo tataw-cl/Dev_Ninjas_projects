@@ -18,9 +18,9 @@ export const Sidebar = () => {
             <SidebarComponent img={"images/blogger.png"} TextData="Blog"/>
             <SidebarComponent img={"images/events.png"} TextData="Events"/>
         </div>
-        <button className='button1'>create post</button>
+        <button className='button2'>create post</button>
+        <button className='button2' id='logOut'>LogOut</button>
         </div>
-        <div className="right_div">Right Div</div>
 
     </div>
   )

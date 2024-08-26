@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Routes} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import { GeneralView } from './frontend/components/GeneralView/GeneralView.jsx';
 // import { GeneralView } from './frontend/components/GeneralView/GeneralView.jsx';
 import { UserView } from './frontend/components/userView/userView.jsx';
