@@ -14,7 +14,27 @@
     align-items: center;
     gap: 20%;
 }
+.one, .three{
+    width: 25%;
+}
+.two{
+    width: 40%;
+    border-radius: 20px;
+}
+.navItem input{
+    width: 100%;
+}
 .navItem img{
     width: 50%;
     height: auto;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    background-color: #D9D9D9;
+    border-color: #D9D9D9;
+    border-radius: 0% 0px 0px 1%;
 }

@@ -1,14 +1,15 @@
 import React from 'react'
 import { useState } from 'react'
+import "./sidebarComponent.css"
 
-export const SidebarComponent = ({img, TextData, classD}) => {
+export const SidebarComponent = ({img, TextData}) => {
     const [clicked, setClicked] = useState(false)
     const backgroundOnclick="backgroundOnclick";
   return (
-    <div onClick={()=>{setClicked(true)}} 
-    className={clicked ? backgroundOnclick: classD} >
+    <button onClick={()=>{setClicked(true)}} 
+    className={"background"} >
         <img src={img} alt={`${img} icon`}/>
         {TextData}
-    </div>
+    </button>
   )
 }
