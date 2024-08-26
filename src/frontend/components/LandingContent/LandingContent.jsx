@@ -2,7 +2,7 @@ import React from 'react'
 
 export const LandingContent = ({className}) => {
   return (
-    <div className='LandingContent scroll-section'>
+    <div className='LandingContent'>
 <div>
     <img style={{width: '100%'}} src="images/Rectangle 41.png" alt="page content" />
 </div>

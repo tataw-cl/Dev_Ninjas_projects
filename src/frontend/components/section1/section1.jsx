@@ -7,7 +7,7 @@ export const Section1 = () => {
         <div className="section1Text">
             <h4>
              <span>Breaking Down</span> Barriers
-Enhancing <span>Collaboration</span>
+Enhancing <span>Collaboration </span>
 Preserving <span>Cultural Heritage</span>
             </h4>
             <button className='button1'>Get started</button>
