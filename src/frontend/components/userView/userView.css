@@ -4,3 +4,15 @@
 display: flex;
 flex-direction: column;
 }
+.sideSection{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    height: 85%;
+}
+.alto{
+    width: 23%;
+}
+.tenor{
+    width: 77%;
+}

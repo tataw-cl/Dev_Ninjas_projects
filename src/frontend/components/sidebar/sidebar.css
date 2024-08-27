@@ -7,7 +7,7 @@
     /* text-align: left; */
  
 }
-img{
+.sidebarContent img{
     width: 10%;
     height: auto;
     /* background-color: antiquewhite; */
@@ -19,18 +19,26 @@ img{
 
     /* SideBarHeader */
     font-family: 'poppins', sans-serif;
-    font-size: 30px;
+    font-size: 27px;
     font-style: normal;
-    font-weight: 110;
+    font-weight: 90;
     line-height: normal;
-    height: auto;
+    height: 100%;
 }
 .container1{
-    width: 15%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     height: 100%;
     background-color: #00004D;
+    gap: 3%;
     padding-top: 2%;
     padding-bottom: 13%;
+}
+.button2:hover{
+background-color: rgb(68, 140, 207);
+}
+#logOut{
+    margin-top: 80%;
+    align-items: baseline;
 }

@@ -90,9 +90,21 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 10px;
   margin: 2% 2%;
   transition-duration: 0.4s;
   cursor: pointer;
   border-radius: 12px;
  }
+ .chat-popup {
+  position: relative;
+  bottom: 0;
+  right: 20px;
+  width: 400px;
+  height: 450px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}

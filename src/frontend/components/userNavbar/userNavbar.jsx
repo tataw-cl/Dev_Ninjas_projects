@@ -1,5 +1,4 @@
 import React from 'react'
-import { Searchbar } from '../searchbar/searchbar'
 import './userNavbar.css'
 
 export const    UserNavbar = () => {
@@ -17,9 +16,6 @@ export const    UserNavbar = () => {
                 <img src="images/Ellipse 10.png" alt="User profile" />
                 Name of client
             </div>
-            {/* <div className="navItem">
-               
-            </div> */}
         </div>
     </div>
   )
