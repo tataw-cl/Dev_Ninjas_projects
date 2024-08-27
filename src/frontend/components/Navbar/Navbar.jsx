@@ -13,6 +13,7 @@ export const Navbar = () => {
                 <a href="#">Upload</a>
                 <a href="#">Community</a>
             </div>   
+
             <button className='button1' onClick={()=>{navigate('logIn')}}>LogIn</button>
             <button className='button1'>SignUp</button>  
         </div>

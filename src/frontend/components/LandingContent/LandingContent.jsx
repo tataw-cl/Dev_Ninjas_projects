@@ -7,11 +7,13 @@ export const LandingContent = () => {
     <img style={{width: '100%'}} src="images/Rectangle 41.png" alt="page content" />
 </div>
 <div className={"textComp"}>
-    <h3>Destructured text information</h3>
-    <h5>
+    <p className={"subHeading"}>Destructured text information</p>
+    <div className={"text"}>
+    <p>
     UserName
-    </h5>
-    view.Date time
+    </p>
+    <p>views.Date time</p>
+    </div> 
 </div>
     </div>
   )
