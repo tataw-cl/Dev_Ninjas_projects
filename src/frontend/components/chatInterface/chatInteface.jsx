@@ -13,9 +13,10 @@ export const ChatInterface = () => {
   };
 
   return (
+    <div className='chat-section'>
     <div className="chat-container">
       <div className="chat-header">
-        <h2>Chat</h2>
+        <h2>Chat with</h2>
         
       </div>
       
@@ -37,6 +38,7 @@ export const ChatInterface = () => {
         />
         <button onClick={handleSendMessage}>Send</button>
       </div>
+    </div>
     </div>
   );
 };

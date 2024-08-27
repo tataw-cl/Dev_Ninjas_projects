@@ -1,18 +1,18 @@
 import React from 'react'
 
-export const LandingContent = () => {
+export const LandingContent = ({postDescription, UserName, view, Date, imageUrl}) => {
   return (
     <div className='LandingContent'>
 <div>
-    <img style={{width: '100%'}} src="images/Rectangle 41.png" alt="page content" />
+    <img style={{width: '100%'}} src={imageUrl} alt="page content" />
 </div>
 <div className={"textComp"}>
-    <p className={"subHeading"}>Destructured text information</p>
+    <p className={"subHeading"}>{postDescription}</p>
     <div className={"text"}>
     <p>
-    UserName
+   { UserName}
     </p>
-    <p>views.Date time</p>
+    <p>{view}.{Date}</p>
     </div> 
 </div>
     </div>

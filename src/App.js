@@ -6,6 +6,8 @@ import { UserView } from './frontend/components/userView/userView.jsx';
 import LogIn from './frontend/components/LogIn/logIn.jsx';
 import { SignUp } from './frontend/components/SignUp/signUp.jsx';
 import { UserProvider } from './context/userContext.jsx'; // Import the UserProvider
+import Messaging from './frontend/components/messaging/messages.jsx';
+import { ChatInterface } from './frontend/components/chatInterface/chatInteface.jsx';
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
           <Route path="/user" element={<UserView />} />
           <Route path="/signUp" element={<SignUp />} />
           <Route path="/logIn" element={<LogIn />} />
+          <Route path="/message" element={<ChatInterface />} />
         </Routes>
       </Router>
     </UserProvider>

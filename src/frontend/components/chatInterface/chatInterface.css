@@ -1,3 +1,9 @@
+.chat-section{
+  height: 100%;
+  justify-content: center;
+  padding: 5% 20%;
+}
+
 .chat-container {
     display: flex;
     flex-direction: column;
@@ -9,23 +15,24 @@
   }
   
   .chat-header {
-    margin-top: 10%;
+    margin-top: 2%;
     background-color: #007bff;
     color: white;
-    padding:10%;
+    padding:2%;
     text-align: center;
   }
   
   .chat-messages {
-    flex: 1;
+    /* flex: 1; */
     padding: 10px;
     overflow-y: auto;
     background-color: #f1f1f1;
+    height: 500px;
   }
   
   .chat-message {
-    margin-bottom: -10%;
-    padding: 1%;
+    margin-bottom: -5%;
+    padding: 2%;
     border-radius: 5px;
     background-color: white;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);

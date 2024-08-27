@@ -13,8 +13,8 @@
     flex-direction: row;
      gap: 1.5%;  
     align-items: center;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 1%;
+    padding-right: 10%;
 }
 h2{
     text-align: left;

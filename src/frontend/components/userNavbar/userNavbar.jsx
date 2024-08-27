@@ -1,7 +1,7 @@
 import React from 'react'
 import './userNavbar.css'
 
-export const    UserNavbar = () => {
+export const    UserNavbar = ({userInfo}) => {
   return (
     <div>
         <div className="navContent">
@@ -14,7 +14,7 @@ export const    UserNavbar = () => {
             <div className="navItem three">
                 <img src="images/notification.png" alt="notification button" className={"notification"} />
                 <img src="images/Ellipse 10.png" alt="User profile" className={"usericon"} />
-                <p className={"txt"}>John Doe</p>
+                <p className={"txt"}>{userInfo}</p>
             </div>
         </div>
     </div>

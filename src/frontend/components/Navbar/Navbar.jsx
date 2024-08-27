@@ -15,7 +15,7 @@ export const Navbar = () => {
             </div>   
 
             <button className='button1' onClick={()=>{navigate('logIn')}}>LogIn</button>
-            <button className='button1'>SignUp</button>  
+            {/* <button className='button1'>SignUp</button>   */}
         </div>
         </div>
   )

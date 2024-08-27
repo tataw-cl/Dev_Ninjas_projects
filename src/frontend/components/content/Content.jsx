@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
 import './content.css'; // Make sure to create and import a CSS file
-import { ChatInterface } from '../chatInterface/chatInteface';
-import Popup from '../3popButton/3popButton';
+// import { ChatInterface } from '../chatInterface/chatInteface';
+// import Popup from '../3popButton/3popButton';
+import { useNavigate } from 'react-router-dom';
 
 export const Content = () => {
+  const navigate= useNavigate(); 
   const [downloadType, setDownloadType] = useState('default');
   const [likeType, setLikeType] = useState('default');
   const [shareType, setShareType] = useState('default');
@@ -21,9 +23,9 @@ export const Content = () => {
     setShareType(shareType === 'default' ? 'black' : 'default');
   };
 
-  const handleConnectClick = () => {
-    setShowChat(true);
-  };
+  // const handleConnectClick = () => {
+  //   setShowChat(true);
+  // };
 
 
   return (
@@ -59,7 +61,7 @@ export const Content = () => {
             <div className="profilePhoto"><img style={{height: '100%', width: '100%'}} src="images/profile 1.png" alt="Profile of author" /></div>
             <div>
             <p className='bodyText'>Connect and chat with the author</p>
-              <button onClick={handleConnectClick} className='button1'>Connect</button>
+              <button onClick={()=>{navigate('/message')}} className='button1'>Message Author</button>
               </div>
           </div>
           {/* {showChat && (
