@@ -3,6 +3,7 @@ import { UserNavbar } from '../userNavbar/userNavbar'
 import { Sidebar } from '../sidebar/sidebar'
 import { Section } from '../sections/Section'
 import "./userView.css"
+import { Content } from '../content/Content'
 
 export const UserView = () => {
   return (
@@ -14,7 +15,6 @@ export const UserView = () => {
         <Section />
         </div>
         </div>
-
     </div>
   )
 }
