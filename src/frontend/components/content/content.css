@@ -20,6 +20,8 @@
     align-items: center;
     margin: 0% 2% 2% 2%;
     width: 50%;
+    padding: auto;
+    padding-right: 10%;
 }
 
 /* .C_container {
@@ -39,7 +41,7 @@
   
   .imageContainer img {
     display: block;
-    width: 100%;
+    width: 80%;
     height: auto;
   }
   

@@ -58,10 +58,10 @@ export const Content = () => {
           <button className='button'>Get in touch</button> */}
           
           <div className="connectToAuthor">
-            <div className="profilePhoto"><img style={{height: '100%', width: '100%'}} src="images/profile 1.png" alt="Profile of author" /></div>
+            <div className="profilePhoto"><img style={{height: '80%', width: '80%'}} src="images/profile 1.png" alt="Profile of author" /></div>
             <div>
             <p className='bodyText'>Connect and chat with the author</p>
-              <button onClick={()=>{navigate('/message')}} className='button1'>Message Author</button>
+              <button onClick={()=>{navigate('/message')}} className='button1'>Connect</button>
               </div>
           </div>
           {/* {showChat && (
