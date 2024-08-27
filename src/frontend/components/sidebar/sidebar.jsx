@@ -32,7 +32,6 @@ export const Sidebar = () => {
         {showPost && <div className='post'>
             <Post />
             </div>}
-
     </div>
   )
 }

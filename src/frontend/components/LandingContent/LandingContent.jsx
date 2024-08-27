@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const LandingContent = ({className}) => {
+export const LandingContent = () => {
   return (
     <div className='LandingContent'>
 <div>

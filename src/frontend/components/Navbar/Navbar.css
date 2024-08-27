@@ -32,19 +32,53 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 }
+.button1:hover{
+    background-color: rgb(205, 200, 200);
+    color: #00004D;
+    border: 1px solid #00004D;
+    transition-duration: 0.4s;
+}
+
    .menu{
     display: flex;
     flex-direction: row;
     gap: 3%;
    }
-   a{
+   /* a{
     color: #00004D;
     text-decoration: none;
     text-align: end;
     font-size: 24px;
 font-style: normal;
 font-weight: 600;
-   }
+   } */
+   a{
+    color: #00004D;
+    text-decoration: none;
+    text-align: end;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    position: relative; /* Required for the ::after pseudo-element */
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #00004D;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
    .links{
     display: flex;
     flex-direction: row;

@@ -1,0 +1,36 @@
+.popup-activator {
+  position: relative;
+}
+
+.popup-container {
+  position: absolute;
+  top: 50px; /* Adjust as needed */
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.popup h3 {
+  margin-top: 0;
+}
+
+.popup ul {
+  list-style: none;
+  padding: 0;
+}
+
+.popup ul li {
+  margin: 5px 0;
+}
+
+.popup ul li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.popup ul li a:hover {
+  text-decoration: underline;
+}
