@@ -6,15 +6,15 @@ export const    UserNavbar = () => {
     <div>
         <div className="navContent">
             <div className="navItem one">
-                <img src="images/Logo.png" alt="Vibezz Logo" />
+                <img src="images/Logo.png" alt="Vibezz Logo" className={"logo1"}/>
             </div>
             <div className="navItem two">
-               <input type="text" placeholder='search for something' />
+               <input type="search" placeholder='Search...' />
             </div>
             <div className="navItem three">
-                <img src="images/notification.png" alt="notification button" />
-                <img src="images/Ellipse 10.png" alt="User profile" />
-                Name of client
+                <img src="images/notification.png" alt="notification button" className={"notification"} />
+                <img src="images/Ellipse 10.png" alt="User profile" className={"usericon"} />
+                <p className={"txt"}>John Doe</p>
             </div>
         </div>
     </div>

@@ -26,8 +26,8 @@ export const Sidebar = () => {
             <SidebarComponent img={"images/blogger.png"} TextData="Blog"/>
             <SidebarComponent img={"images/events.png"} TextData="Events"/>
         </div>
-        <button className='button2' onClick={()=>{setShowPost(true)}}>create post</button>
-        <button className='button2' id='logOut' onClick={()=>{setShowLogOut(true)}}>LogOut</button>
+        <button className='button2' onClick={()=>{setShowPost(true)}}>Create post</button>
+        <button className='button2' id='logOut' onClick={()=>{setShowLogOut(true)}}>Log out</button>
         </div>
         {showPost && <div className='post'>
             <Post />

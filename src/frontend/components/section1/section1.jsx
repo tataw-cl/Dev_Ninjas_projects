@@ -5,15 +5,18 @@ export const Section1 = () => {
   return (
     <div className='section1'>
         <div className="section1Text">
-            <h4>
-             <span>Breaking Down</span> Barriers
-Enhancing <span>Collaboration </span>
-Preserving <span>Cultural Heritage</span>
-            </h4>
+            <h1>
+             Breaking Down Barriers,
+               Enhancing Collaboration,
+               Preserving Cultural Heritage
+            </h1>
+            <div class="buttonStyle"> 
             <button className='button1'>Get started</button>
+            </div>
+            
         </div>
         <div className="section1Image">
-    <img src="images/Group 7.png" alt="Africa map" />
+    <img src="images/Hero2.jpg" alt="Africa" />
         </div>
     </div>
   )

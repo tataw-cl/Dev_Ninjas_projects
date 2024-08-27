@@ -12,7 +12,7 @@ export const Navbar = () => {
                 <a href="#">Community</a>
             </div>   
             <button className='button1'>LogIn</button>
-            <button className='button1'>SignUp</button>  
+            {/* <button className='button1'>SignUp</button>   */}
         </div>
         </div>
   )
