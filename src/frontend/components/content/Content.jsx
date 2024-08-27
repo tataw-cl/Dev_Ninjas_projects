@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './content.css'; // Make sure to create and import a CSS file
 import { ChatInterface } from '../chatInterface/chatInteface';
+import Popup from '../3popButton/3popButton';
 
 export const Content = () => {
   const [downloadType, setDownloadType] = useState('default');
@@ -61,12 +62,13 @@ export const Content = () => {
               <button onClick={handleConnectClick} className='button1'>Connect</button>
               </div>
           </div>
-          {showChat && (
+          {/* {showChat && (
         <div className="chat-popup">
           <button onClick={()=>{setShowChat(false)}}>X close</button>
-          <ChatInterface />
-        </div>
-      )}
+          {/* <ChatInterface /> *
+          <Popup />
+        </div> 
+      )}*/}
           </div>
 
         </div>

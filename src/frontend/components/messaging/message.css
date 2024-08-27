@@ -1,0 +1,74 @@
+.messaging-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    height: 33vh; /* One-third of the viewport height */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .messaging-header {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+  }
+  
+  .messaging-list {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+  }
+  
+  .messaging-message {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    word-break: break-word;
+  }
+  
+  .messaging-link {
+    color: #007bff;
+    text-decoration: none;
+    word-break: break-word;
+  }
+  
+  .messaging-input-container {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .messaging-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .messaging-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 767px) {
+    .messaging-container {
+      width: 90%;
+      right: 5%;
+      bottom: 10px;
+      height: 40vh;
+    }
+  }
+  
